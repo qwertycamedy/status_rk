@@ -34,7 +34,7 @@ export const Header = () => {
 
   return (
     <header
-      className={clsx("absolute z-10 w-full pt-[35px]", {
+      className={clsx("absolute z-10 w-full pt-[35px] animate-show", {
         "before:fixed before:left:0 before:top:0 before:w-svw before:h-svh before:-z-10":
           burger,
       })}

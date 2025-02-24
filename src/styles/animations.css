@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-show-title: show-title 1s ease-out;
+  @keyframes show-title {
+    0% {
+      opacity: 0;
+      transform: translate(0, 200%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+}

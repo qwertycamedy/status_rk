@@ -2,14 +2,17 @@ import Link from "next/link";
 import { FC } from "react";
 
 interface IProps {
+  className?: string;
   w?: number;
   h?: number;
 }
 
-export const Logo: FC<IProps> = ({ w = 113, h = 28 }) => {
+export const Logo: FC<IProps> = ({ className, w = 113, h = 28 }) => {
   return (
     <Link
-      className={`w-[${w}px] h-[${h}px] text-white hover:opacity-70 transition-opacity duration-300 ease-linear`}
+      className={`w-[${w}px] h-[${h}px] text-white hover:opacity-70 transition-opacity duration-300 ease-linear ${
+        className || ""
+      }`}
       href={"/"}
     >
       <svg

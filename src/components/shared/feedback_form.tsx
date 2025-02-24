@@ -47,7 +47,7 @@ export const FeedbackForm = () => {
   };
 
   return (
-    <form className="flex items-end justify-between gap-5" onSubmit={onSubmit}>
+    <form className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 lg:gap-5" onSubmit={onSubmit}>
       <Label label="Ваше имя">
         <Input
           type="text"
@@ -89,7 +89,7 @@ export const FeedbackForm = () => {
           "pointer-events-none bg-green-400": status === loadStatus.success,
         })}
       >
-        {status === null && "Отправить запрос"}
+        {status === null && "Связаться с нами"}
         {status === loadStatus.error && "Ошибка"}
         {status === loadStatus.loading && "Загрузка..."}
         {status === loadStatus.success && "Отправлено!"}

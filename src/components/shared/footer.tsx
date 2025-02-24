@@ -23,19 +23,19 @@ const navLinks = [
 
 export const Footer = () => {
   return (
-    <header className="absolute w-full pb-[46px] text-nowrap">
-      <Container className="flex items-center justify-between gap-[60px]">
-        <div className="w-full flex items-center gap-[50px]">
-          <Logo />
-          <ul className="flex items-center gap-[30px]">
+    <header className="absolute w-full pb-[22px] lg:pb-[46px] text-nowrap">
+      <Container className="flex flex-wrap xl:flex-nowrap justify-center gap-[22px] items-center xl:justify-between lg:gap-[60px]">
+        <div className="w-full flex flex-wrap lg:flex-nowrap items-center gap-[35px] lg:gap-[50px]">
+          <Logo className="-order-3" />
+          <ul className="w-full flex items-center justify-between gap-0 lg:gap-[30px] xl:-order-2">
             {navLinks.map((link, i) => (
               <li key={i}>
-                <MyLink variant="text-blue" href={link.href}>{link.text}</MyLink>
+                <MyLink className="!p-0 lg:!py-[8px] lg:!px-[14px]" variant="text-blue" href={link.href}>{link.text}</MyLink>
               </li>
             ))}
           </ul>
-          <div className="ml-auto">
-            Пн-Пт 09:00–18:00&nbsp;&nbsp;&nbsp;
+          <div className="flex flex-col items-end lg:block ml-auto -order-1">
+            Пн-Пт 09:00–18:00{' '}
             <span className="text-[#ffffff90]">Сб 10:00–15:00</span>
           </div>
         </div>

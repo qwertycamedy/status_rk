@@ -5,7 +5,7 @@ export const Works = () => {
   return (
     <section id="works">
       <Container>
-        <div className="flex items-start justify-between mb-[40px]">
+        <div className="flex items-start justify-between mb-[22px] lg:mb-[40px]">
           <Title as={"h2"}>Примеры работ</Title>
         </div>
         <WorksSlider />

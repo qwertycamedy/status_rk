@@ -48,7 +48,7 @@ export const Header = () => {
             className={clsx(
               "flex transition-opacity duration-200 ease-linear max-w-lg w-[93%] z-10 py-[22px] px-[16.5px] bg-[#181818] absolute flex-col gap-[14px] left-1/2 top-[60px] -translate-x-1/2 rounded-[29px] lg:py-0 lg:px-0 lg:w-auto lg:bg-transparent lg:left-0 lg:top-0 lg:translate-x-0 lg:rounded-none lg:relative lg:!opacity-100 lg:flex-row items-center lg:gap-[10px]",
               {
-                "opacity-0 pointer-events-none": !burger,
+                "opacity-0 pointer-events-none lg:pointer-events-auto": !burger,
               }
             )}
           >
